@@ -1,4 +1,4 @@
-# etch-a-sketch
+# Etch-A-Sketch!
 
 ## Idea
 - Creating a webpage with a 16x16 grid of square divs
