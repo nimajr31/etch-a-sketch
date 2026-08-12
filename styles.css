@@ -1,1 +1,18 @@
 /* This file will contain all the styles for the index page */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 250, 230);
+}
+.grid-container {
+    display: flex;
+    border: 1px solid rgb(2, 94, 2);
+}
+.empty-grid {
+    background-color: rgb(218, 208, 208);
+    height: 70px;
+    width: 70px;
+    border: 1px solid rgb(2, 94, 2);
+}
