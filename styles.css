@@ -2,7 +2,7 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgb(250, 250, 230);
 }
@@ -10,9 +10,24 @@ body {
     display: flex;
     border: 1px solid rgb(2, 94, 2);
 }
-.empty-grid {
+.empty-box {
     background-color: rgb(218, 208, 208);
     height: 70px;
     width: 70px;
     border: 1px solid rgb(2, 94, 2);
+}
+.hover-box {
+    background-color: lightcyan;
+}
+button {
+    height: 100px;
+    width: 300px;
+    margin: 100px 0;
+    background-color: lightcyan;
+    font-family: monospace;
+    font-size: 25px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
 }
