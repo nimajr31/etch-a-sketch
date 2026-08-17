@@ -9,23 +9,23 @@ body {
 .grid-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid rgb(113, 149, 149);
     height: 1200px;
     width: 1200px;
-
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
 }
 .empty-box {
     display: flex;
     flex: 1;
-    background-color: rgb(218, 208, 208);
-    border: 1px solid black;
+    background-color: whitesmoke;
+    border: 1px solid rgb(113, 149, 149);
 }
 .row-container {
     display: flex;
     flex: 1;
 }
 .hover-box {
-    background-color: lightcyan;
+    background-color: rgb(152, 226, 226);
 }
 button {
     height: 100px;
@@ -34,6 +34,9 @@ button {
     background-color: lightcyan;
     font-family: monospace;
     font-size: 25px;
+    margin: 90px 30px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
 }
 .left-side {
     display: flex;
@@ -41,9 +44,9 @@ button {
     align-items: center;
 }
 .welcome {
-    font-size: 45px;
+    font-size: 50px;
     font-family: monospace;
 }
 .hover-button {
-    background-color: rgb(184, 246, 246);
+    background-color: rgb(152, 226, 226);;
 }
