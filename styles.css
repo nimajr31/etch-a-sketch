@@ -8,13 +8,21 @@ body {
 }
 .grid-container {
     display: flex;
+    flex-direction: column;
     border: 1px solid rgb(2, 94, 2);
+    height: 1200px;
+    width: 1200px;
+
 }
 .empty-box {
+    display: flex;
+    flex: 1;
     background-color: rgb(218, 208, 208);
-    height: 50px;
-    width: 50px;
     border: 1px solid rgb(2, 94, 2);
+}
+.row-container {
+    display: flex;
+    flex: 1;
 }
 .hover-box {
     background-color: lightcyan;

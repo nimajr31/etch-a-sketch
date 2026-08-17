@@ -22,11 +22,38 @@ function createGrid(size) {
         }
     }
 }
+function removeGrid() {
+    const container = document.querySelector(".grid-container");
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+}
+
+function newGridPrompt() {
+    let num = prompt("Enter the number of of rows you'd like!\nYour number must be between 1 and 100.", 16);
+    // Check for cancel button
+    if (num === null) {
+        return;
+    }
+    // Check for number being in range
+    if (num > 100 || num < 1) {
+        newGridPrompt();
+        return;
+    }
+    clear();
+    removeGrid();
+    createGrid(num);
+}
+
 
 // Create event listeners for our buttons
 const clearButton = document.querySelector(".clear-button");
 clearButton.addEventListener("click", clear);
 
+const newGridButton = document.querySelector(".new-grid-button");
+newGridButton.addEventListener("click", newGridPrompt);
+
 
 // Make function calls
 createGrid(16);
+
