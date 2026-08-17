@@ -49,9 +49,13 @@ function newGridPrompt() {
 // Create event listeners for our buttons
 const clearButton = document.querySelector(".clear-button");
 clearButton.addEventListener("click", clear);
+clearButton.addEventListener("mouseover", (e) => clearButton.classList.add("hover-button"));
+clearButton.addEventListener("mouseout", (e) => clearButton.classList.remove("hover-button"));
 
 const newGridButton = document.querySelector(".new-grid-button");
 newGridButton.addEventListener("click", newGridPrompt);
+newGridButton.addEventListener("mouseover", (e) => newGridButton.classList.add("hover-button"));
+newGridButton.addEventListener("mouseout", (e) => newGridButton.classList.remove("hover-button"));
 
 
 // Make function calls
